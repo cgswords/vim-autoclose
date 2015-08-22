@@ -509,7 +509,9 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Configuration
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let s:AutoClosePairs_FactoryDefaults = AutoClose#ParsePairs("() {} [] ` \" '")
+" let s:AutoClosePairs_FactoryDefaults = AutoClose#ParsePairs("() {} [] ` \" '")
+" let s:AutoClosePairs_FactoryDefaults = AutoClose#ParsePairs("() {} [] \" '")
+let s:AutoClosePairs_FactoryDefaults = AutoClose#ParsePairs("() {} [] \"")
 if !exists("g:AutoClosePairs_add") | let g:AutoClosePairs_add = "" | endif
 if !exists("g:AutoClosePairs_del") | let g:AutoClosePairs_del = "" | endif
 if !exists("g:AutoClosePairs")
